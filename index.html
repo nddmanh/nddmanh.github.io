@@ -11,7 +11,10 @@
 	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">  
 	
 	<link rel="icon" type="image/x-icon" href="./iconvn2.png" />
-	
+
+	<!-- Library modal video css  -->
+	<link rel="stylesheet" type="text/css" href="./assets/lib/modal-video.min.css">
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 	
@@ -136,7 +139,8 @@
 											<br>
 											<a target="_blank" href="https://game-quay-so.herokuapp.com"><i class="fa fa-laptop fa-fw" aria-hidden="true"></i></a>
 											<a target="_blank" href="https://github.com/nddmanh/gameQuaySo" style="margin-left: 15px;"><i class="fa fa-code fa-fw" aria-hidden="true"></i></a>
-											<a target="_blank" href="https://www.youtube.com/watch?v=LXWIHQRpjig" style="margin-left: 15px;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											<a class="js-modal-btn" data-video-id="LXWIHQRpjig" style="margin-left: 15px; cursor: pointer;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											
 										</p>
 									</div>
 								</div><!--//item-->
@@ -154,7 +158,8 @@
 											<br>
 											<a target="_blank" href="https://learnit-project.netlify.app/"><i class="fa fa-laptop fa-fw" aria-hidden="true"></i></a>
 											<a target="_blank" href="https://github.com/nddmanh/LearnIt-project" style="margin-left: 15px;"><i class="fa fa-code fa-fw" aria-hidden="true"></i></a>
-											<a target="_blank" href="https://www.youtube.com/watch?v=zVYP1UZkdjw&t=80s" style="margin-left: 15px;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											<a class="js-modal-btn" data-video-id="zVYP1UZkdjw" style="margin-left: 15px; cursor: pointer;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+
 										</p>
 										
 									</div>
@@ -173,7 +178,8 @@
 											<br>
 											<a target="_blank" href="https://twitter-blog-nddmanh.netlify.app"><i class="fa fa-laptop fa-fw" aria-hidden="true"></i></a>
 											<a target="_blank" href="https://github.com/nddmanh/Twitter-project" style="margin-left: 15px;"><i class="fa fa-code fa-fw" aria-hidden="true"></i></a>
-											<a target="_blank" href="https://www.youtube.com/watch?v=aD6Xit7ZI4M" style="margin-left: 15px;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											<a class="js-modal-btn" data-video-id="aD6Xit7ZI4M" style="margin-left: 15px; cursor: pointer;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+
 										</p>
 										
 									</div>
@@ -192,7 +198,8 @@
 											<br>
 											<a target="_blank" href="https://awesome-chat-nddmanh.herokuapp.com"><i class="fa fa-laptop fa-fw" aria-hidden="true"></i></a>
 											<a target="_blank" href="https://github.com/nddmanh/awesome-chat" style="margin-left: 15px;"><i class="fa fa-code fa-fw" aria-hidden="true"></i></a>
-											<a target="_blank" href="https://www.youtube.com/watch?v=ecD7e_Eb9m4" style="margin-left: 15px;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											<a class="js-modal-btn" data-video-id="ecD7e_Eb9m4" style="margin-left: 15px; cursor: pointer;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+										
 										</p>
 										
 									</div>
@@ -211,7 +218,8 @@
 											<br>
 											<a target="_blank" href="https://lbcgame.herokuapp.com/"><i class="fa fa-laptop fa-fw" aria-hidden="true"></i></a>
 											<a target="_blank" href="https://github.com/nddmanh/lbc-fe" style="margin-left: 15px;"><i class="fa fa-code fa-fw" aria-hidden="true"></i></a>
-											<a target="_blank" href="https://www.youtube.com/watch?v=WuRSFsLjM5w" style="margin-left: 15px;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+											<a class="js-modal-btn" data-video-id="WuRSFsLjM5w" style="margin-left: 15px; cursor: pointer;"><i class="fab fa-youtube fa-fw fa-lg"></i></a>
+										
 										</p>
 										
 									</div>
@@ -295,7 +303,13 @@
 			</div>
 			<!--//main-wrapper-->
 			
+			<!-- JS for video modal  -->
+			<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+			<script src="./assets/lib/modal-video.js"></script>
 
+			<script>
+					new ModalVideo('.js-modal-btn');
+			</script>
 </body>
 </html> 
 
